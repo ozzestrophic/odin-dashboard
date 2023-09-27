@@ -670,8 +670,16 @@ video {
   grid-template-columns: minmax(50px,auto) auto;
 }
 
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-rows-\[60px_1fr\] {
   grid-template-rows: 60px 1fr;
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col {
