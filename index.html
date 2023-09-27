@@ -22,15 +22,17 @@
 <body>
     <div class="font-plusJakarta max-w-[1600px] h-screen grid grid-rows-[60px_1fr] grid-cols-[minmax(280px,1fr)_4fr]">
         <!-- Top bar -->
-        <div class="px-9 col-span-2 grid grid-cols-[auto_1fr_auto] justify-around items-center gap-16">
+        <div class="col-span-1 flex items-center pl-10">
             <h1 class="font-[800] text-2xl text-gray-600">Logo</h1>
-            <input type="text" class="h-10 flex-1 rounded-2xl border border-gray-200 px-6    " placeholder="Search for anything">
-            <div class="flex items-center gap-6">
-                <img src="./src/images/mail.svg" alt="" class="w-6 h-6">
-                <img src="./src/images/bell.svg" alt="" class="w-6 h-6">
-                <img src="./src/images/head.png" alt="" class="w-9 h-9 rounded-3xl">
-            </div>
         </div>
+        <div class="pr-9 col-span-1 grid grid-cols-[minmax(50px,1fr)_auto] items-center gap-16">
+                <input type="text" class="h-10 flex-1 rounded-2xl border border-gray-200 px-6 text-sm font-medium placeholder:text-gray-400" placeholder="Search for anything">
+                <div class="flex items-center gap-6">
+                    <img src="./src/images/mail.svg" alt="" class="w-6 h-6">
+                    <img src="./src/images/bell.svg" alt="" class="w-6 h-6">
+                    <img src="./src/images/head.png" alt="" class="w-9 h-9 rounded-3xl">
+                </div>
+            </div>
 
 
         <!-- Side bar -->
@@ -38,10 +40,11 @@
 
 
         <!-- Main content -->
-        <div class="bg-gray-50 pr-10">
+        <div class="bg-gray-50 pr-10 flex flex-col gap-6">
             <div class="py-8">
                 <h1 class="text-base font-bold">Hey, Dude - <span class="font-normal text-gray-500">here’s what’s happening with your store today</span></h1>
             </div>
+            <!-- the top cards -->
             <div class="flex gap-6">
                 <div class="flex flex-1 flex-col p-4 gap-3 bg-white border-gray-200 border border-solid rounded-xl">
                     <p class="uppercase text-xs text-gray-500">Today’s Sale</p>
@@ -69,6 +72,60 @@
                     <div class="flex justify-between items-center">
                         <p class="font-bold text-2xl">$12,426</p>
                         <p class="font-medium text-green-500 text-sm">$12,426</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- sales report left and traffic sources -->
+            <div class="flex gap-6">
+                <div class="flex-[2] bg-white border border-gray-200 flex flex-col gap-10 p-5 rounded-xl">
+                </div>
+                <div class="flex-1 bg-white border border-gray-200 flex flex-col gap-10 p-5 rounded-xl">
+                    <div class="flex justify-between">
+                        <p class="font-bold">Traffic Sources</p>
+                        <div class="flex gap-1 items-center">
+                            <p class="text-[12px]">Last 7 days</p>
+                            <img src="./src/images/cheveron-down.svg" alt="" class="w-3 h-3">
+                        </div>
+                    </div>
+                    <!-- traffic bars -->
+                    <div class="flex flex-col gap-6">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between">
+                                <p class="font-normal text-sm">Direct</p>
+                                <p class="text-[12px]">1,43,382</p>
+                            </div>
+                            <div class="bg-gray-100 h-1 rounded-md relative">
+                                <div class="absolute bg-purple-600 h-1 w-[80%]"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between">
+                                <p class="font-normal text-sm">Referral</p>
+                                <p class="text-[12px]">87,974</p>
+                            </div>
+                            <div class="bg-gray-100 h-1 rounded-md relative">
+                                <div class="absolute bg-purple-600 h-1 w-[70%]"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between">
+                                <p class="font-normal text-sm">Social Media</p>
+                                <p class="text-[12px]">45,282</p>
+                            </div>
+                            <div class="bg-gray-100 h-1 rounded-md relative">
+                                <div class="absolute bg-purple-600 h-1 w-[30%]"></div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between">
+                                <p class="font-normal text-sm">Twitter</p>
+                                <p class="text-[12px]">21,892</p>
+                            </div>
+                            <div class="bg-gray-100 h-1 rounded-md relative">
+                                <div class="absolute bg-purple-600 h-1 w-[15%]"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
