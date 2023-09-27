@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="/dist/output.css" rel="stylesheet">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- <style>
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style> -->
+
+
 </head>
 <body>
-    <div class="max-w-[1600px] h-screen grid grid-rows-[60px_1fr] grid-cols-[minmax(280px,1fr)_4fr]">
+    <div class="font-plusJakarta max-w-[1600px] h-screen grid grid-rows-[60px_1fr] grid-cols-[minmax(280px,1fr)_4fr]">
         <!-- Top bar -->
         <div class="px-9 col-span-2 grid grid-cols-[auto_1fr_auto] justify-around items-center gap-16">
-            <h1 class="text-2xl ">LOGO</h1>
+            <h1 class="font-[800] text-2xl text-gray-600">Logo</h1>
             <input type="text" class="h-10 flex-1 rounded-2xl border border-gray-200 px-6    " placeholder="Search for anything">
             <div class="flex items-center gap-6">
                 <img src="./src/images/mail.svg" alt="" class="w-6 h-6">
@@ -25,7 +38,41 @@
 
 
         <!-- Main content -->
-        <div class="bg-green-400 "></div>
+        <div class="bg-gray-50 pr-10">
+            <div class="py-8">
+                <h1 class="text-base font-bold">Hey, Dude - <span class="font-normal text-gray-500">here’s what’s happening with your store today</span></h1>
+            </div>
+            <div class="flex gap-6">
+                <div class="flex flex-1 flex-col p-4 gap-3 bg-white border-gray-200 border border-solid rounded-xl">
+                    <p class="uppercase text-xs text-gray-500">Today’s Sale</p>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold text-2xl">$12,426</p>
+                        <p class="font-medium text-green-500 text-sm">$12,426</p>
+                    </div>
+                </div>
+                <div class="flex flex-1 flex-col p-4 gap-3 bg-white border-gray-200 border border-solid rounded-xl">
+                    <p class="uppercase text-xs text-gray-500">Today’s Sale</p>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold text-2xl">$12,426</p>
+                        <p class="font-medium text-green-500 text-sm">$12,426</p>
+                    </div>
+                </div>
+                <div class="flex flex-1 flex-col p-4 gap-3 bg-white border-gray-200 border border-solid rounded-xl">
+                    <p class="uppercase text-xs text-gray-500">Today’s Sale</p>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold text-2xl">$12,426</p>
+                        <p class="font-medium text-green-500 text-sm">$12,426</p>
+                    </div>
+                </div>
+                <div class="flex flex-1 flex-col p-4 gap-3 bg-white border-gray-200 border border-solid rounded-xl">
+                    <p class="uppercase text-xs text-gray-500">Today’s Sale</p>
+                    <div class="flex justify-between items-center">
+                        <p class="font-bold text-2xl">$12,426</p>
+                        <p class="font-medium text-green-500 text-sm">$12,426</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
 </body>
